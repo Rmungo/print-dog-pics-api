@@ -3,7 +3,7 @@ function getValue(){
         event.preventDefault();
         $('.showPics').empty();
             numOfPics = $('.typeNum').val();
-        if (numOfPics > 50){
+        if (numOfPics > 50 || numOfPics < 1){
             alert('Choose a number between 1 and 50');
         }
         else {
